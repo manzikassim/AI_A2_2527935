@@ -1,0 +1,48 @@
+{
+  "random_state": 7935,
+  "metrics": {
+    "mean_baseline": {
+      "test": {
+        "MAE": 2.005,
+        "RMSE": 2.5538,
+        "R2": -0.0043
+      },
+      "cv_rmse_train": 2.5709
+    },
+    "linear_regression": {
+      "test": {
+        "MAE": 0.752,
+        "RMSE": 0.9271,
+        "R2": 0.8676
+      },
+      "cv_rmse_train": 1.0761
+    },
+    "random_forest": {
+      "test": {
+        "MAE": 0.9137,
+        "RMSE": 1.1794,
+        "R2": 0.7858
+      },
+      "cv_rmse_train": 1.4169
+    }
+  },
+  "selected_model": "linear_regression",
+  "selection_reason": "linear_regression had the lowest 5-fold cross-validated RMSE on the training set (1.0761); the test set was used only for the final report.",
+  "largest_error_row": {
+    "row_id": 107,
+    "actual": 11.4745,
+    "predicted": 13.8444,
+    "error": 2.3699,
+    "features": {
+      "rainfall_mm": 1253.5238,
+      "avg_temp_c": 13.7263,
+      "soil_moisture_pct": 51.6113,
+      "fertilizer_kg": 22.0129,
+      "field_size_ha": 3.2903,
+      "season": "A",
+      "cooperative_support": 1.0
+    }
+  },
+  "verification_code": "AI-A2-7935",
+  "dataset_sha256": "6535cb925d58e2a4ca2bee57af978029da6538103735682eb5d26fc014b58863"
+}

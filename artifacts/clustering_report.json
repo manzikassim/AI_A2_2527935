@@ -1,0 +1,148 @@
+{
+  "random_state": 7935,
+  "silhouette_by_k": {
+    "2": 0.1437,
+    "3": 0.1303,
+    "4": 0.1446,
+    "5": 0.1422,
+    "6": 0.1479
+  },
+  "selected_k": 6,
+  "selection_reason": "K=6 has the highest silhouette score (0.1479). Scores below about 0.25 mean clusters overlap and are weak.",
+  "profiles": {
+    "0": {
+      "label": "Cluster 0: higher temperature, higher field size, lower rainfall; 44% season A; 50% receive cooperative support",
+      "size_train": 36,
+      "center_original_units": {
+        "rainfall_mm": 748.8385,
+        "avg_temp_c": 22.1591,
+        "soil_moisture_pct": 52.5317,
+        "fertilizer_kg": 147.6951,
+        "field_size_ha": 2.6905
+      },
+      "z_scores_vs_training_mean": {
+        "rainfall_mm": -1.143,
+        "avg_temp_c": 0.842,
+        "soil_moisture_pct": 0.285,
+        "fertilizer_kg": 0.245,
+        "field_size_ha": 0.507
+      },
+      "share_season_A": 0.4444,
+      "share_cooperative_support": 0.5,
+      "post_hoc_mean_yield_tons": 11.9551,
+      "post_hoc_note": "yield shown only to interpret clusters; it was NOT used to form them"
+    },
+    "1": {
+      "label": "Cluster 1: higher rainfall, higher fertilizer use, higher field size, lower soil moisture; 68% season A; 64% receive cooperative support",
+      "size_train": 28,
+      "center_original_units": {
+        "rainfall_mm": 1140.8909,
+        "avg_temp_c": 19.8362,
+        "soil_moisture_pct": 31.4554,
+        "fertilizer_kg": 198.2715,
+        "field_size_ha": 2.9262
+      },
+      "z_scores_vs_training_mean": {
+        "rainfall_mm": 0.531,
+        "avg_temp_c": 0.268,
+        "soil_moisture_pct": -0.97,
+        "fertilizer_kg": 0.958,
+        "field_size_ha": 0.735
+      },
+      "share_season_A": 0.6786,
+      "share_cooperative_support": 0.6429,
+      "post_hoc_mean_yield_tons": 14.0584,
+      "post_hoc_note": "yield shown only to interpret clusters; it was NOT used to form them"
+    },
+    "2": {
+      "label": "Cluster 2: higher temperature, lower field size; 42% season A; 55% receive cooperative support",
+      "size_train": 40,
+      "center_original_units": {
+        "rainfall_mm": 1069.083,
+        "avg_temp_c": 22.3789,
+        "soil_moisture_pct": 44.7518,
+        "fertilizer_kg": 103.2774,
+        "field_size_ha": 1.1043
+      },
+      "z_scores_vs_training_mean": {
+        "rainfall_mm": 0.224,
+        "avg_temp_c": 0.896,
+        "soil_moisture_pct": -0.178,
+        "fertilizer_kg": -0.381,
+        "field_size_ha": -1.027
+      },
+      "share_season_A": 0.425,
+      "share_cooperative_support": 0.55,
+      "post_hoc_mean_yield_tons": 9.9832,
+      "post_hoc_note": "yield shown only to interpret clusters; it was NOT used to form them"
+    },
+    "3": {
+      "label": "Cluster 3: higher rainfall, higher soil moisture, lower temperature, lower fertilizer use; 35% season A; 50% receive cooperative support",
+      "size_train": 34,
+      "center_original_units": {
+        "rainfall_mm": 1191.6404,
+        "avg_temp_c": 16.1232,
+        "soil_moisture_pct": 61.9959,
+        "fertilizer_kg": 50.1315,
+        "field_size_ha": 2.4416
+      },
+      "z_scores_vs_training_mean": {
+        "rainfall_mm": 0.747,
+        "avg_temp_c": -0.647,
+        "soil_moisture_pct": 0.849,
+        "fertilizer_kg": -1.13,
+        "field_size_ha": 0.266
+      },
+      "share_season_A": 0.3529,
+      "share_cooperative_support": 0.5,
+      "post_hoc_mean_yield_tons": 12.6225,
+      "post_hoc_note": "yield shown only to interpret clusters; it was NOT used to form them"
+    },
+    "4": {
+      "label": "Cluster 4: lower rainfall, lower temperature, lower soil moisture, lower fertilizer use; 50% season A; 43% receive cooperative support",
+      "size_train": 28,
+      "center_original_units": {
+        "rainfall_mm": 801.1781,
+        "avg_temp_c": 15.9133,
+        "soil_moisture_pct": 35.228,
+        "fertilizer_kg": 77.8481,
+        "field_size_ha": 2.6476
+      },
+      "z_scores_vs_training_mean": {
+        "rainfall_mm": -0.919,
+        "avg_temp_c": -0.699,
+        "soil_moisture_pct": -0.745,
+        "fertilizer_kg": -0.739,
+        "field_size_ha": 0.466
+      },
+      "share_season_A": 0.5,
+      "share_cooperative_support": 0.4286,
+      "post_hoc_mean_yield_tons": 10.0364,
+      "post_hoc_note": "yield shown only to interpret clusters; it was NOT used to form them"
+    },
+    "5": {
+      "label": "Cluster 5: higher soil moisture, higher fertilizer use, lower temperature; 51% season A; 42% receive cooperative support",
+      "size_train": 43,
+      "center_original_units": {
+        "rainfall_mm": 1112.7534,
+        "avg_temp_c": 15.726,
+        "soil_moisture_pct": 56.5474,
+        "fertilizer_kg": 197.8538,
+        "field_size_ha": 1.6893
+      },
+      "z_scores_vs_training_mean": {
+        "rainfall_mm": 0.411,
+        "avg_temp_c": -0.745,
+        "soil_moisture_pct": 0.525,
+        "fertilizer_kg": 0.953,
+        "field_size_ha": -0.461
+      },
+      "share_season_A": 0.5116,
+      "share_cooperative_support": 0.4186,
+      "post_hoc_mean_yield_tons": 13.4249,
+      "post_hoc_note": "yield shown only to interpret clusters; it was NOT used to form them"
+    }
+  },
+  "interpretation": "Features were generated independently and uniformly, so there is no strong natural grouping; clusters mainly split farms by the dominant condition differences above.",
+  "verification_code": "AI-A2-7935"
+}

@@ -1,0 +1,20 @@
+{
+  "rows": 265,
+  "missing_values": {
+    "soil_moisture_pct": 13,
+    "fertilizer_kg": 13
+  },
+  "duplicate_rows": 3,
+  "out_of_range": {
+    "rainfall_mm": 0,
+    "avg_temp_c": 0,
+    "soil_moisture_pct": 0,
+    "fertilizer_kg": 0,
+    "field_size_ha": 0,
+    "cooperative_support": 0,
+    "season": 0,
+    "yield_tons": 0
+  },
+  "leakage_check": "passed",
+  "verification_code": "AI-A2-7935"
+}

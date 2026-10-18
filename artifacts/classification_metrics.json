@@ -1,0 +1,128 @@
+{
+  "random_state": 7935,
+  "metrics": {
+    "majority_baseline": {
+      "test": {
+        "precision": 0.4906,
+        "recall": 1.0,
+        "f1": 0.6582,
+        "roc_auc": 0.5,
+        "confusion_matrix": {
+          "labels": [
+            0,
+            1
+          ],
+          "matrix": [
+            [
+              0,
+              27
+            ],
+            [
+              0,
+              26
+            ]
+          ]
+        }
+      },
+      "cv_f1_train": 0.5333
+    },
+    "logistic_regression": {
+      "test": {
+        "precision": 0.9259,
+        "recall": 0.9615,
+        "f1": 0.9434,
+        "roc_auc": 0.9915,
+        "confusion_matrix": {
+          "labels": [
+            0,
+            1
+          ],
+          "matrix": [
+            [
+              25,
+              2
+            ],
+            [
+              1,
+              25
+            ]
+          ]
+        }
+      },
+      "cv_f1_train": 0.928
+    },
+    "random_forest": {
+      "test": {
+        "precision": 0.9286,
+        "recall": 1.0,
+        "f1": 0.963,
+        "roc_auc": 0.9986,
+        "confusion_matrix": {
+          "labels": [
+            0,
+            1
+          ],
+          "matrix": [
+            [
+              25,
+              2
+            ],
+            [
+              0,
+              26
+            ]
+          ]
+        }
+      },
+      "cv_f1_train": 0.9204
+    }
+  },
+  "selected_model": "logistic_regression",
+  "selection_reason": "logistic_regression had the highest 5-fold cross-validated F1 on the training set (0.928); the test set was used only for the final report.",
+  "misclassified_test_rows": [
+    {
+      "row_id": 37,
+      "rainfall_mm": 848.5434,
+      "avg_temp_c": 16.7098,
+      "soil_moisture_pct": 54.8265,
+      "fertilizer_kg": 44.7831,
+      "field_size_ha": 1.4989,
+      "season": "B",
+      "cooperative_support": 0.0,
+      "actual": 0.0,
+      "predicted": 1.0,
+      "risk_probability": 0.5412,
+      "yield_per_ha": 6.4648
+    },
+    {
+      "row_id": 223,
+      "rainfall_mm": 990.2987,
+      "avg_temp_c": 20.7059,
+      "soil_moisture_pct": 54.8463,
+      "fertilizer_kg": 34.7112,
+      "field_size_ha": 1.9104,
+      "season": "A",
+      "cooperative_support": 0.0,
+      "actual": 0.0,
+      "predicted": 1.0,
+      "risk_probability": 0.671,
+      "yield_per_ha": 5.8835
+    },
+    {
+      "row_id": 0,
+      "rainfall_mm": 1124.2047,
+      "avg_temp_c": 19.8461,
+      "soil_moisture_pct": 35.7297,
+      "fertilizer_kg": 202.5534,
+      "field_size_ha": 2.7366,
+      "season": "A",
+      "cooperative_support": 1.0,
+      "actual": 1.0,
+      "predicted": 0.0,
+      "risk_probability": 0.4905,
+      "yield_per_ha": 5.3704
+    }
+  ],
+  "note": "high_risk means yield per hectare below the median; classes are balanced by construction.",
+  "verification_code": "AI-A2-7935"
+}
