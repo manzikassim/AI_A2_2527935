@@ -1,4 +1,4 @@
-# Musanze Harvest Intelligence Service
+﻿# Musanze Harvest Intelligence Service
 
 | | |
 |---|---|
@@ -72,4 +72,4 @@ A human (agronomist or field officer) must review every output.
 - Python version: 3.14.3
 - Tested OS: Windows 11 Pro, version 22H2 (OS build 22621.4317)
 - Repository URL: https://github.com/manzikassim/AI_A2_2527935
-- Final commit hash: COMMIT_HASH_HERE
+- Final commit hash: 4c68a0d (final code commit; later commits only update documentation)
