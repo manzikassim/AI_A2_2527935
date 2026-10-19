@@ -4,7 +4,7 @@
 |---|---|
 | **Name** | Manzi Kassim |
 | **Registration number** | 25/27935 |
-| **Institutional username** | ug2527935@ines.ac.rw *(confirm this is your real username)* |
+| **Institutional username** | ug2527935@ines.ac.rw |
 | **Verification code** | **AI-A2-7935** |
 | **Seed (LLLL)** | 7935 |
 
@@ -19,7 +19,7 @@ Training and CLI prediction work fully offline; a FastAPI service is provided fo
 ## Setup and run
 ```bash
 python -m venv .venv
-# Windows: .venv\Scripts\activate      macOS/Linux: source .venv/bin/activate
+# Windows (PowerShell): .venv\Scripts\Activate.ps1      macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
 python run_all.py --student-id ug2527935@ines.ac.rw --seed 7935
 python predict.py --json samples/valid.json
@@ -32,6 +32,9 @@ uvicorn app:app --host 127.0.0.1 --port 8000      # docs at http://127.0.0.1:800
 ## Key numbers (from my run)
 - Base rows 262 (240 + 7935 mod 41), +3 duplicates = 265 raw rows; 13 missing values each in `soil_moisture_pct` and `fertilizer_kg`; 262 rows after cleaning (train 209 / test 53).
 - SHA-256: `6535cb925d58e2a4ca2bee57af978029da6538103735682eb5d26fc014b58863`
+- Regression (linear regression): MAE 0.752, RMSE 0.9271, R2 0.8676.
+- Classification (logistic regression): F1 0.9434, ROC-AUC 0.9915.
+- Clustering: K=6 selected by silhouette (0.1479); clusters overlap, so they are weak.
 
 ## Project layout
 `run_all.py` entry point, `predict.py` CLI, `app.py` API, `src/` modules (config, validation, preprocessing,
@@ -65,6 +68,8 @@ Synthetic, independently generated features give weak natural clusters (silhouet
 Results do not transfer to real farms without real data and validation. Not for finance, insurance or public-service decisions.
 A human (agronomist or field officer) must review every output.
 
-## Environment and submission details (fill in)
-- Python version: ______ (developed with 3.12)  Tested OS: ______
-- Repository URL: ______  Final commit hash: ______
+## Environment and submission details
+- Python version: 3.14.3
+- Tested OS: Windows 11 Pro, version 22H2 (OS build 22621.4317)
+- Repository URL: https://github.com/manzikassim/AI_A2_2527935
+- Final commit hash: COMMIT_HASH_HERE
